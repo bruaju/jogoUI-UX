@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333; /* Cor de fundo para o corpo */
+    color: white; /* Cor do texto */
+}
+
+#game-container {
+    text-align: center;
+}
+
+#game {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-image: url('fase1.webp'); /* Caminho da sua imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o contêiner */
+    background-position: center; /* Centraliza a imagem */
+    overflow: hidden; /* Esconde os elementos que saem do contêiner */
+    border: 2px solid #fff; /* Borda do contêiner do jogo */
+}
+
+.hidden {
+    display: none; /* Oculta elementos com a classe hidden */
+}
+
+#player {
+    position: absolute;
+    bottom: 20px; /* Distância do jogador do fundo do contêiner */
+    width: 40px; /* Largura do jogador */
+    height: 40px; /* Altura do jogador */
+    background-color: #4CAF50; /* Cor do jogador */
+    left: 50%; /* Centraliza o jogador */
+    transform: translateX(-50%); /* Ajusta o posicionamento */
+}
+
+.enemy {
+    position: absolute; /* Posiciona os inimigos */
+    width: 30px; /* Largura dos inimigos */
+    height: 30px; /* Altura dos inimigos */
+    background-color: red; /* Cor dos inimigos */
+    top: 0; /* Inicia na parte superior do contêiner */
+}
+
+#score-board {
+    margin-top: 10px; /* Espaçamento acima do placar */
+    font-size: 1.2em; /* Tamanho da fonte do placar */
+}
